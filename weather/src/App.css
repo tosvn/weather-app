@@ -44,6 +44,59 @@
   font-size: 16px;
 }
 
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.search-form input {
+  min-width: 0;
+  flex: 1;
+  padding: 13px 15px;
+  border: 1px solid #d3e0e5;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #183744;
+  font: inherit;
+  font-size: 15px;
+}
+
+.search-form input:focus-visible,
+.search-form button:focus-visible {
+  outline: 3px solid rgba(55, 110, 131, 0.35);
+  outline-offset: 2px;
+}
+
+.search-form button {
+  padding: 0 20px;
+  border: 0;
+  border-radius: 12px;
+  background: #376e83;
+  color: white;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-form button:hover {
+  background: #28596c;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .temperature {
   margin: 30px 0 26px;
   color: #183744;
@@ -92,5 +145,13 @@
   .weather-card {
     padding: 40px 24px;
     border-radius: 22px;
+  }
+
+  .search-form {
+    gap: 8px;
+  }
+
+  .search-form button {
+    padding: 0 14px;
   }
 }
